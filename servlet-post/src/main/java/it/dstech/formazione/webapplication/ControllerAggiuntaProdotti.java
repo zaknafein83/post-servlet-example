@@ -23,6 +23,7 @@ public class ControllerAggiuntaProdotti extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String nome = req.getParameter("nome");
+		
 		int qta = Integer.parseInt(req.getParameter("qta"));
 		Prodotto p = new Prodotto();
 		p.setQuantita(qta);
